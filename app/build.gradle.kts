@@ -58,4 +58,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     //font
     implementation(libs.androidx.material.icons.extended) // Use the latest version
+    //gson
+    implementation (libs.gson)
 }

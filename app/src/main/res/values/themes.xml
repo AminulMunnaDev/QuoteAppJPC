@@ -2,4 +2,5 @@
 <resources>
 
     <style name="Theme.QuotesAppJPC" parent="android:Theme.Material.Light.NoActionBar" />
+    <item name="statusBarColor" type="color">@color/black</item>
 </resources>
