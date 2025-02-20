@@ -13,9 +13,7 @@ fun QuoteList(
     LazyColumn(
         content = {
             items(data) {
-                QuotesListItem(quote = it) {
-                    onClick(it) // ✅ Passing quote as required
-                }
+                QuotesListItem(quote = it, { onClick(it) })
             }
         }
     )

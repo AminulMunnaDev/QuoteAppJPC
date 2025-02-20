@@ -31,12 +31,12 @@ import com.example.quotesappjpc.Model.Quote
 
 @SuppressLint("Range")
 @Composable
-fun QuotesListItem(quote: Quote, onClick: () -> Unit) {
+fun QuotesListItem(quote: Quote, onClick: (quote: Quote) -> Unit) {
     Card(
         elevation = CardDefaults
             .cardElevation(6.dp),
         modifier = Modifier
-            .clickable { onClick() }
+            .clickable { onClick(quote) }
             .padding(8.dp)
 
     ) {

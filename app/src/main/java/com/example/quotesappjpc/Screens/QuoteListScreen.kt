@@ -14,7 +14,7 @@ import com.example.quotesappjpc.Model.Quote
 
 @Composable
 fun QuoteListScreen(
-    data: Array<Quote>, onclick: () -> Unit
+    data: Array<Quote>, onclick: (quote: Quote) -> Unit
 ) {
     Column {
         Text(text = "Quote App",
@@ -25,8 +25,6 @@ fun QuoteListScreen(
                 .fillMaxWidth(1f),
             style = MaterialTheme.typography.bodyLarge
             )
-        QuoteList(data = data){
-            onclick()
-        }
+        QuoteList(data = data, onclick )
     }
 }
